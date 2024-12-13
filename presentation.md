@@ -80,8 +80,6 @@ In a football team, the entire squad needs to work together—each player has th
 
 ### A Winning Team
 
-By implementing these security measures, we ensure that our network is like a well-coordinated football team, with each player (device) doing its part. The **switch** (midfielders) controls the flow of traffic, the **router** (goalkeeper) defends the network perimeter, the **AP** (winger) allows wireless access but is protected, and the **monitoring system** (coach) ensures the game runs smoothly.
+Just like in football, where team coordination leads to victory, the security of our network depends on how well each device and measure is configured and maintained. Together, we can ensure that our network remains secure, and like a champion football team.
 
-Just like in football, where team coordination leads to victory, the security of our network depends on how well each device and measure is configured and maintained. Together, we can ensure that our network remains secure, and like a champion football team, we can prevent any hackers from scoring.
-
-Thank you for listening! Let’s keep our network security strong and continue to “win” this cybersecurity match together!
+That’s all from me today. Let’s keep our network security strong and continue to “win” this cybersecurity match together!
