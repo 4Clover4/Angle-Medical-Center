@@ -172,13 +172,13 @@ The table expressing the Wireless connection security measures :
 In a football team, the entire squad needs to work together—each player has their role. The midfielders pass, the defenders protect, the forwards attack, and the goalkeeper blocks. Similarly, in network security, every component of the network must work together to protect our data. A single weak link—whether it’s an unsecured switch, router, or AP—could allow attackers to infiltrate.
 
 
-### **Conclusion: A Winning Team**
+###  A Winning Team
 
 By implementing these security measures, we ensure that our network is like a well-coordinated football team, with each player (device) doing its part. The **switch** (midfielders) controls the flow of traffic, the **router** (goalkeeper) defends the network perimeter, the **AP** (winger) allows wireless access but is protected, and the **monitoring system** (coach) ensures the game runs smoothly.
 
 Just like in football, where team coordination leads to victory, the security of our network depends on how well each device and measure is configured and maintained. Together, we can ensure that our network remains secure, and like a champion football team, we can prevent any hackers from scoring.
 
-Thank you for listening! Let’s keep our network security strong and continue to “win” this cybersecurity match together!
+ Let’s keep our network security strong and continue to “win” this cybersecurity match together!
 
 
 
