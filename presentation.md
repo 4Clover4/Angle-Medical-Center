@@ -32,3 +32,34 @@ The **restrict** option is chosen over `shutdown` or `protect` because it preven
 The command **no cdp run** disables the Cisco Discovery Protocol (CDP) on a device, preventing it from sending or receiving CDP information, which is used for discovering neighboring Cisco devices and their details.
 
 
+###  The Router – The Goalkeeper
+
+The goalkeeper is arguably the most important player in a football team. They stand at the goal and prevent the opposing team from scoring. In the same way, the router acts as the "goalkeeper" for your network, controlling the flow of traffic in and out of your internal network. If the router isn’t properly secured, hackers can easily bypass it and score by gaining access to the internal network.
+
+Think of the router as Chelsea's Edouard Mendy, always standing strong to block the opposition’s shots. If the router isn’t properly secured, it’s like having a goalkeeper who's not paying attention, allowing hackers to sneak past.
+
+**How We Secure the Router:**  
+We ensure that the router only allows authorized traffic by implementing **Access Control Lists (ACLs)** like the command `access-list 130 deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255`, blocking certain IP addresses or traffic. Just like Edouard won’t let any balls get past him, we ensure that only valid data packets can pass through the router.
+
+We also make use of **SSH for remote management** (via `ip ssh version 2`), which encrypts our management traffic to prevent unauthorized users from controlling our router remotely. This is like Edouard wearing a high-tech kit to ensure his performance is secure and untraceable by the opponents.
+
+####  
+Router hardening focuses on protecting the internal network by utilizing NAT, ACLs, and secure routing protocols like OSPF.
+
+The **overload** keyword in the command `ip nat inside source list 1 interface gigabitEthernet 0/0 overload` enables Port Address Translation (PAT), allowing multiple internal devices to share a single public IP address. Each device’s connection is distinguished by a unique port number, saving public IP addresses.
+
+**OSPF** (Open Shortest Path First) is a link-state routing protocol used to find the best path for data exchange in an IP network, by calculating the shortest path first based on the network's topology.
+
+####  
+End device hardening focuses on securing the actual devices connected to the network by controlling their access and ensuring they are regularly maintained, reducing the chance of compromise.
+
+###  The Network Monitoring System – The Coach
+
+Just as a football coach is responsible for observing the game and making tactical adjustments, our **network monitoring system** watches over the network and ensures everything is functioning correctly. It looks for vulnerabilities, scans for unauthorized devices, and helps us detect potential threats early on.
+  
+Imagine the network monitoring system as a coach like José Mourinho—always alert, watching the game unfold, and ready to make the right call at the right moment. Without monitoring, it's like having a coach who’s not paying attention, missing vital changes in the game and allowing an easy goal.
+
+**How We Monitor the Network:**  
+We use **Syslog**  for centralized logging, making sure we receive real-time updates about any security incidents. Tools like **Wireshark** or **Nmap** allow us to monitor traffic and detect threats, just like a coach using video analysis to spot the opposition’s weaknesses.
+
+                                                                                          |
