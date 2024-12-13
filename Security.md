@@ -64,7 +64,7 @@ The **overload** keyword in the command `ip nat inside source list 1 interface g
 ####  
 Securing protocols ensures that sensitive information like passwords and routing updates are transmitted securely. Encryption and authentication mechanisms prevent unauthorized interception.
 
----
+
 
 ### **End Device Hardening**
 
