@@ -6,7 +6,7 @@ Hello everyone! Today, we’re going to talk about network security hardening. B
 
 
 
-This document outlines various network security measures to enhance the protection of different network devices, including switches, routers, and wireless access points (APs). The security measures discussed are divided into categories that ensure network access control, data protection, monitoring, and threat prevention. These measures are implemented to secure management access, control traffic flow, prevent unauthorized devices from connecting, and monitor network activities for potential threats.
+This document outlines various network security measures to enhance the protection of different network devices, including switches, routers, and wireless access points (APs). The security measures discussed are divided into categories that ensure network access control, data protection, monitoring, and threat prevention.
 
 ### **Security Measures Breakdown**
 
@@ -63,17 +63,16 @@ The **spanning-tree bpduguard enable** command protects the network by disabling
 
 The command **no cdp run** disables the Cisco Discovery Protocol (CDP) on a device, preventing it from sending or receiving CDP information, which is used for discovering neighboring Cisco devices and their details.
 
-### **Router Hardening Security Measures**
 
 ### ** The Router – The Goalkeeper**
 
 The goalkeeper is arguably the most important player in a football team. They stand at the goal and prevent the opposing team from scoring. In the same way, the router acts as the "goalkeeper" for your network, controlling the flow of traffic in and out of your internal network. If the router isn’t properly secured, hackers can easily bypass it and score by gaining access to your internal network.
 
 **Real-Life Example:**  
-Think of the router as Manchester United's David De Gea, always standing strong to block the opposition’s shots. If the router isn’t properly secured, it’s like having a goalkeeper who's not paying attention, allowing hackers to sneak past.
+Think of the router as Chelsea's Edouard Mendy, always standing strong to block the opposition’s shots. If the router isn’t properly secured, it’s like having a goalkeeper who's not paying attention, allowing hackers to sneak past.
 
 **How We Secure the Router:**  
-We ensure that the router only allows authorized traffic by implementing **Access Control Lists (ACLs)** like the command `access-list 130 deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255`, blocking certain IP addresses or traffic. Just like De Gea won’t let any balls get past him, we ensure that only valid data packets can pass through the router.
+We ensure that the router only allows authorized traffic by implementing **Access Control Lists (ACLs)** like the command `access-list 130 deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255`, blocking certain IP addresses or traffic. Just like Edouard won’t let any balls get past him, we ensure that only valid data packets can pass through the router.
 
 We also make use of **SSH for remote management** (via `ip ssh version 2`), which encrypts our management traffic to prevent unauthorized users from controlling our router remotely. This is like De Gea wearing a high-tech kit to ensure his performance is secure and untraceable by the opponents.
 
@@ -97,10 +96,6 @@ The **overload** keyword in the command `ip nat inside source list 1 interface g
 **OSPF** (Open Shortest Path First) is a link-state routing protocol used to find the best path for data exchange in an IP network, by calculating the shortest path first based on the network's topology.
                                                                                           |
 
-####  
-Securing protocols ensures that sensitive information like passwords and routing updates are transmitted securely. Encryption and authentication mechanisms prevent unauthorized interception.
-
-
 
 ### **End Device Hardening**
 
@@ -115,9 +110,8 @@ End device hardening focuses on securing the actual devices connected to the net
 
 
 
-### **Monitoring and Scanning**
 
-### ** The Network Monitoring System – The Coach**
+###  The Network Monitoring System – The Coach
 
 Just as a football coach is responsible for observing the game and making tactical adjustments, our **network monitoring system** watches over the network and ensures everything is functioning correctly. It looks for vulnerabilities, scans for unauthorized devices, and helps us detect potential threats early on.
 
@@ -125,7 +119,7 @@ Just as a football coach is responsible for observing the game and making tactic
 Imagine the network monitoring system as a coach like José Mourinho—always alert, watching the game unfold, and ready to make the right call at the right moment. Without monitoring, it's like having a coach who’s not paying attention, missing vital changes in the game and allowing an easy goal.
 
 **How We Monitor the Network:**  
-We use **Syslog** and **SNMP** for centralized logging, making sure we receive real-time updates about any security incidents. Tools like **Wireshark** or **Nmap** allow us to monitor traffic and detect threats, just like a coach using video analysis to spot the opposition’s weaknesses.
+We use **Syslog**  for centralized logging, making sure we receive real-time updates about any security incidents. Tools like **Wireshark** or **Nmap** allow us to monitor traffic and detect threats, just like a coach using video analysis to spot the opposition’s weaknesses.
 
 
 | **Security Action**                       | **Description**                                                                  | **Example Command**                                                                                                                                 |
@@ -142,7 +136,7 @@ Continuous monitoring and scanning of the network allow for early detection of s
 In football, the wing players are responsible for delivering precise crosses into the box, providing opportunities for scoring. In the network, the wireless access point (AP) serves a similar function, allowing wireless devices (like laptops and phones) to connect to the network, just like a winger providing a ball for a goal opportunity.
 
 **Real-Life Example:**  
-Imagine the wireless access point as Arsenal’s Bukayo Saka, darting down the wing and delivering crosses to his teammates. However, if our AP isn't properly secured, it’s like Saka running without support—easily intercepted by the opposing team, allowing attackers into our network.
+Imagine the wireless access point as Kylian Mbappé, darting down the wing and delivering crosses to his teammates. However, if our AP isn't properly secured, it’s like Saka running without support—easily intercepted by the opposing team, allowing attackers into our network.
 
 **How We Secure the AP:**  
 We can hide the SSID of our wireless network (similar to keeping our attacking strategy under wraps), so unauthorized users can’t see or connect to it. Additionally, we enforce **WPA3 encryption**, which strengthens wireless security and prevents attackers from cracking the encryption, just like Saka is protected from being tackled by an opponent.
