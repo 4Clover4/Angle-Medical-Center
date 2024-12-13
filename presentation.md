@@ -64,7 +64,7 @@ Imagine the network monitoring system as a coach like José Mourinho—always al
 We use **Syslog**  for centralized logging, making sure we receive real-time updates about any security incidents. Tools like **Wireshark** or **Nmap** allow us to monitor traffic and detect threats, just like a coach using video analysis to spot the opposition’s weaknesses.
 
                                                                                           |
-### ** The Wireless Access Point (AP) – The Wing Players**
+### The Wireless Access Point (AP) – The Wing Players
 
 In football, the wing players are responsible for delivering precise crosses into the box, providing opportunities for scoring. In the network, the wireless access point (AP) serves a similar function, allowing wireless devices (like laptops and phones) to connect to the network, just like a winger providing a ball for a goal opportunity.
 
