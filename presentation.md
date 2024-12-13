@@ -2,7 +2,7 @@
 
 ### **Network Security Hardening Measures - A Football Analogy**
 
-Hello everyone! Today, we’re going to talk about network security hardening. But instead of diving into dry technical details, I’ll use a fun football analogy to explain the security measures we implement in our network. This should make the concepts a lot easier to grasp, and I’ll also share some real-world commands and strategies we use in our network.### **Security Measures Breakdown**
+Hello everyone! Today, we’re going to talk about network security hardening. But instead of diving into dry technical details, I’ll use a fun football analogy to explain the security measures we implement in our network. This should make the concepts a lot easier to grasp, and I’ll also share some real-world commands and strategies we use in our network.
 
 ### **The Team: The Football Pitch**
 
