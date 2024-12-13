@@ -59,7 +59,30 @@ Just as a football coach is responsible for observing the game and making tactic
   
 Imagine the network monitoring system as a coach like José Mourinho—always alert, watching the game unfold, and ready to make the right call at the right moment. Without monitoring, it's like having a coach who’s not paying attention, missing vital changes in the game and allowing an easy goal.
 
+
 **How We Monitor the Network:**  
 We use **Syslog**  for centralized logging, making sure we receive real-time updates about any security incidents. Tools like **Wireshark** or **Nmap** allow us to monitor traffic and detect threats, just like a coach using video analysis to spot the opposition’s weaknesses.
 
                                                                                           |
+### ** The Wireless Access Point (AP) – The Wing Players**
+
+In football, the wing players are responsible for delivering precise crosses into the box, providing opportunities for scoring. In the network, the wireless access point (AP) serves a similar function, allowing wireless devices (like laptops and phones) to connect to the network, just like a winger providing a ball for a goal opportunity.
+
+Imagine the wireless access point as Kylian Mbappé, darting down the wing and delivering crosses to his teammates. However, if our AP isn't properly secured, it’s like Kylian running without support—easily intercepted by the opposing team, allowing attackers into our network.
+
+**How We Secure the AP:**  
+We can hide the SSID of our wireless network (similar to keeping our attacking strategy under wraps), so unauthorized users can’t see or connect to it. Additionally, we enforce **WPA3 encryption**, which strengthens wireless security and prevents attackers from cracking the encryption, just like Kylian is protected from being tackled by an opponent.
+
+
+### The Whole Team: Perfect Coordination
+
+In a football team, the entire squad needs to work together—each player has their role. The midfielders pass, the defenders protect, the forwards attack, and the goalkeeper blocks. Similarly, in network security, every component of the network must work together to protect our data. A single weak link—whether it’s an unsecured switch, router, or AP—could allow attackers to infiltrate.
+
+
+### A Winning Team
+
+By implementing these security measures, we ensure that our network is like a well-coordinated football team, with each player (device) doing its part. The **switch** (midfielders) controls the flow of traffic, the **router** (goalkeeper) defends the network perimeter, the **AP** (winger) allows wireless access but is protected, and the **monitoring system** (coach) ensures the game runs smoothly.
+
+Just like in football, where team coordination leads to victory, the security of our network depends on how well each device and measure is configured and maintained. Together, we can ensure that our network remains secure, and like a champion football team, we can prevent any hackers from scoring.
+
+Thank you for listening! Let’s keep our network security strong and continue to “win” this cybersecurity match together!
