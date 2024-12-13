@@ -1,3 +1,17 @@
+### **Security Measures Overview**
+
+This document outlines various network security measures to enhance the protection of different network devices, including switches, routers, and wireless access points (APs). The security measures discussed are divided into categories that ensure network access control, data protection, monitoring, and threat prevention. These measures are implemented to secure management access, control traffic flow, prevent unauthorized devices from connecting, and monitor network activities for potential threats.
+
+### **Security Measures Breakdown**
+
+The following are key categories of network hardening techniques covered in this document:
+
+1. **Switch Hardening Security Measures**  
+2. **Router Hardening Security Measures**  
+3. **End Device Hardening**  
+4. **Monitoring and Scanning Security Measures**
+
+Each category addresses different aspects of network security, such as authentication, encryption, access control, and traffic monitoring.
 
 
 ### **Switch Hardening Security Measures**
@@ -101,3 +115,16 @@ The table expressing the security measures :
 - **WPA3 Encryption**: Adopting the latest encryption technology ensures the wireless network cannot be cracked or eavesdropped on.
 - **SSID Hiding**: Hiding the SSID reduces the chances of the network being discovered and accessed by unauthorized users.
   
+
+
+
+
+
+
+
+
+
+
+
+
+
