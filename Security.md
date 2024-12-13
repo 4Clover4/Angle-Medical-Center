@@ -1,8 +1,19 @@
 ### **Security Measures Overview**
 
+### **Network Security Hardening Measures - A Football Analogy**
+
+Hello everyone! Today, we’re going to talk about network security hardening. But instead of diving into dry technical details, I’ll use a fun football analogy to explain the security measures we implement in our network. This should make the concepts a lot easier to grasp, and I’ll also share some real-world commands and strategies we use in our network.
+
+
+
 This document outlines various network security measures to enhance the protection of different network devices, including switches, routers, and wireless access points (APs). The security measures discussed are divided into categories that ensure network access control, data protection, monitoring, and threat prevention. These measures are implemented to secure management access, control traffic flow, prevent unauthorized devices from connecting, and monitor network activities for potential threats.
 
 ### **Security Measures Breakdown**
+
+### **The Team: The Football Pitch**
+
+Imagine your entire network as a football team, with the goal of preventing the opposing team (the hackers) from scoring against us. Our job is to make sure they never get a chance to break through. By using proper security measures, we can make sure that the "goalposts" are safe and our data is secure. 
+
 
 The following are key categories of network hardening techniques covered in this document:
 
@@ -15,6 +26,18 @@ Each category addresses different aspects of network security, such as authentic
 
 
 ### **Switch Hardening Security Measures**
+
+### **First Part: The Switch – The Midfielders**
+
+In a football team, the midfielders are key players who control the flow of the game. They pass the ball to the forwards and help transition the defense to attack. In the network world, switches act like midfielders – they control data flow and connect devices across different parts of the network.
+
+**Real-Life Example:**  
+Think of the switch like Barcelona's Xavi. Xavi was always the one distributing precise passes, making sure each player got the ball at the right time. If the switch isn't secured, unauthorized devices can easily connect to the network, just like an opponent breaking through the midfield. This could lead to network breaches or even data theft.
+
+**How We Secure the Switch:**  
+We can "lock down" the midfield by implementing **port security**, such as the command `switchport port-security maximum 2`, which restricts the number of MAC addresses per port. This is like Xavi only passing the ball to trusted teammates—if an unauthorized device tries to connect, the port will shut down or restrict access. This prevents unwanted devices from "breaking through" into the network.
+
+
 
 | **Security Action**                       | **Description**                                                                 | **Example Command**                                                                                                                                      |
 |-------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,6 +64,19 @@ The **spanning-tree bpduguard enable** command protects the network by disabling
 The command **no cdp run** disables the Cisco Discovery Protocol (CDP) on a device, preventing it from sending or receiving CDP information, which is used for discovering neighboring Cisco devices and their details.
 
 ### **Router Hardening Security Measures**
+
+### **Second Part: The Router – The Goalkeeper**
+
+The goalkeeper is arguably the most important player in a football team. They stand at the goal and prevent the opposing team from scoring. In the same way, the router acts as the "goalkeeper" for your network, controlling the flow of traffic in and out of your internal network. If the router isn’t properly secured, hackers can easily bypass it and score by gaining access to your internal network.
+
+**Real-Life Example:**  
+Think of the router as Manchester United's David De Gea, always standing strong to block the opposition’s shots. If the router isn’t properly secured, it’s like having a goalkeeper who's not paying attention, allowing hackers to sneak past.
+
+**How We Secure the Router:**  
+We ensure that the router only allows authorized traffic by implementing **Access Control Lists (ACLs)** like the command `access-list 130 deny ip 192.168.40.0 0.0.0.255 192.168.10.0 0.0.0.255`, blocking certain IP addresses or traffic. Just like De Gea won’t let any balls get past him, we ensure that only valid data packets can pass through the router.
+
+We also make use of **SSH for remote management** (via `ip ssh version 2`), which encrypts our management traffic to prevent unauthorized users from controlling our router remotely. This is like De Gea wearing a high-tech kit to ensure his performance is secure and untraceable by the opponents.
+
 
 | **Security Action**                       | **Description**                                                                  | **Example Command**                                                                                                                                          |
 |-------------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -90,7 +126,18 @@ End device hardening focuses on securing the actual devices connected to the net
 ####  
 Continuous monitoring and scanning of the network allow for early detection of security issues, ensuring that potential threats are dealt with before they cause significant damage.
 
-The table expressing the security measures :
+### **Third Part: The Wireless Access Point (AP) – The Wing Players**
+
+In football, the wing players are responsible for delivering precise crosses into the box, providing opportunities for scoring. In the network, the wireless access point (AP) serves a similar function, allowing wireless devices (like laptops and phones) to connect to the network, just like a winger providing a ball for a goal opportunity.
+
+**Real-Life Example:**  
+Imagine the wireless access point as Arsenal’s Bukayo Saka, darting down the wing and delivering crosses to his teammates. However, if our AP isn't properly secured, it’s like Saka running without support—easily intercepted by the opposing team, allowing attackers into our network.
+
+**How We Secure the AP:**  
+We can hide the SSID of our wireless network (similar to keeping our attacking strategy under wraps), so unauthorized users can’t see or connect to it. Additionally, we enforce **WPA3 encryption**, which strengthens wireless security and prevents attackers from cracking the encryption, just like Saka is protected from being tackled by an opponent.
+
+
+The table expressing the Wireless connection security measures :
 
 | **Device**             | **Security Measures**                                         | **Explanation**                                                                                       |
 |------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -98,7 +145,7 @@ The table expressing the security measures :
 |                        | **ACL (Access Control List)**                                 | Configure ACLs to allow VLAN20 only internet access while blocking access to internal network segments, improving security. |
 |                        | **Port Security**                                             | Limits the number of MAC addresses allowed per port and enables sticky MAC address learning, preventing unauthorized devices from connecting. |
 |                        | **DHCP Snooping**                                             | Enables DHCP snooping to prevent DHCP spoofing attacks, allowing only trusted DHCP servers to assign IP addresses to VLAN20. |
-|                        | **ARP Protection**                                            | Enables ARP inspection to prevent ARP spoofing, ensuring that devices in VLAN20 communicate only with legitimate ARP entries. |
+|                        |        | |
 | **Wireless AP (Guest Network)** | **SSID Hiding**                                               | Hides the SSID to prevent potential attackers from discovering the network, reducing the chance of unauthorized connections. |
 |                        | **WPA3 Encryption**                                           | Uses WPA3 encryption standard, providing stronger encryption algorithms to prevent wireless traffic from being cracked. |
 |                        | **Frequent Wireless Password Changes**                        | Regularly changes wireless passwords to minimize the risk of password leaks. |
